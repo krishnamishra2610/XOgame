@@ -1,0 +1,23 @@
+.grid {
+    width: 318px;
+    height: 318px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: black;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 2px;
+    background: transparent;
+    width: 100px;
+}
