@@ -61,6 +61,7 @@ function check() {
 function clearSquares() {
     square.forEach(className => {
         className.textContent = ""
+        XO ='X'
     })
 }
 
