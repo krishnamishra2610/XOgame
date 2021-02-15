@@ -6,12 +6,12 @@ square.forEach(className => {
     className.addEventListener('click', () => {
         if (className.textContent != 'X' && className.textContent != 'O') {
             className.textContent = XO
+            if (XO === 'X') XO = 'O'
+            else XO = 'X'
             if(rs){
                XO ='X'
               rs=false
             }
-            if (XO === 'X') XO = 'O'
-            else XO = 'X'
             let timer = setInterval(check, 1000)
         }
 
