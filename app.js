@@ -1,10 +1,15 @@
 const square = document.querySelectorAll('.square')
 var XO = 'X'
+var rs = false
 
 square.forEach(className => {
     className.addEventListener('click', () => {
         if (className.textContent != 'X' && className.textContent != 'O') {
             className.textContent = XO
+            if(rs){
+               XO ='X'
+              rs=false
+            }
             if (XO === 'X') XO = 'O'
             else XO = 'X'
             let timer = setInterval(check, 1000)
@@ -62,7 +67,7 @@ function clearSquares() {
     square.forEach(className => {
         className.textContent = ""
     })
-    XO ='X'
+     rs =true
 }
 
 const resetBoxes = document.querySelector('#resetBoxes')
