@@ -61,9 +61,8 @@ function check() {
 function clearSquares() {
     square.forEach(className => {
         className.textContent = ""
-        XO ='X'
     })
 }
-
+XO ='X'
 const resetBoxes = document.querySelector('#resetBoxes')
 resetBoxes.addEventListener('click', clearSquares)
