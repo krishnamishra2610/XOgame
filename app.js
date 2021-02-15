@@ -62,7 +62,7 @@ function clearSquares() {
     square.forEach(className => {
         className.textContent = ""
     })
-
+    XO ='O'
 }
 
 const resetBoxes = document.querySelector('#resetBoxes')
