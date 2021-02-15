@@ -4,6 +4,7 @@ var XO = 'X'
 square.forEach(className => {
     className.addEventListener('click', () => {
         if (className.textContent != 'X' && className.textContent != 'O') {
+            resetXO()
             className.textContent = XO
             if (XO === 'X') XO = 'O'
             else XO = 'X'
@@ -62,7 +63,10 @@ function clearSquares() {
     square.forEach(className => {
         className.textContent = ""
     })
+( function resetXO(){
+  XO='X'
+})
 }
-XO ='X'
+
 const resetBoxes = document.querySelector('#resetBoxes')
 resetBoxes.addEventListener('click', clearSquares)
